@@ -1,0 +1,329 @@
+/*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.hero{
+    color: red;
+}
+
+.tok{
+        color: red;
+}
+
+.logo-hero{
+    display: flex;
+}
+
+.menu{
+     display: flex;
+     margin: 0 1rem 0 5rem;
+}
+
+.logo{
+    width: 45px;
+    height: auto;
+    position: relative;
+    margin-left: 1rem;  
+}
+
+/* dropdown */
+/* .menu ul{
+    position: absolute;
+    justify-content: space-between;
+    top: 3.1rem;
+    right: 6.9rem;
+    gap: 1rem;
+    background-color: rgba(197, 200, 199, 0.423);
+} */
+
+/*
+.sub-menu {
+    display: none;
+    padding: .85rem;
+}
+
+.sub-menu:hover,
+#menu-item-33:hover .sub-menu {
+    display: grid;
+}
+
+ul li {
+   
+    display: grid;
+    padding: 1rem 2rem;
+}
+
+ul {
+    position: relative;
+}
+
+ul li:hover {
+
+    background-color: rgb(177, 175, 175);
+}   
+/* hamburger form */
+/* .hamburger{
+    display: none;
+    height: 1.8rem;
+    width: 2.15rem;
+    background-size: cover;
+    border: 0;
+    background-color: white;
+} */
+
+/* hamburger form */
+/* .hamburger{
+    display: none;
+    height: 1.8rem;
+    width: 2.15rem;
+    background-size: cover;
+    border: 0;
+    background-color: white;
+}
+
+/* for screen readers only */
+/* .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  } */
+
+
+
+  /*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+  }
+  header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: aliceblue;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    width: 45px;
+    height: auto;
+}
+
+header .menu-navbar-container ul{
+    list-style: none;
+
+}
+
+header .menu-navbar-container ul li{
+    position: relative;
+    float: left;
+}
+ de kleuren veranderen naar de hover  
+header .menu-navbar-container ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+header .menu-navbar-container ul li a:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+ de dropdown 
+header .menu-navbar-container ul li ul{
+    position: absolute;
+    left: 0px;
+    background-color: red;
+    display: none;
+}
+
+header .menu-navbar-container ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .menu-navbar-container ul li:focus-within > ul,
+header .menu-navbar-container ul li:hover > ul{
+    display: inline;
+}
+
+ hamburger menu 
+#hamburger-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+
+
+@media(max-width:991px){
+
+    header{
+        padding: 20px;
+        
+    }
+
+    header label{
+        display: initial;
+
+    }
+
+    header .menu-navbar-container{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background-color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 1);
+        display: none;
+    }
+
+    header .menu-navbar-container ul li{
+    width: 100%;
+    text-align: center;
+
+    }
+
+    header .menu-navbar-container ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    
+    header .menu-navbar-container ul li ul li{
+         background-color: #eee;
+    }
+
+    #hamburger-bar:checked ~ .menu-navbar-container{
+        display: flex;    
+    }
+
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    width: 45px;
+    height: auto;
+  }
+  
+  header .menu-navbar-container ul {
+    list-style: none;
+  }
+  
+  header .menu-navbar-container ul li {
+    position: relative;
+    float: left;
+  }
+  
+  /* Changed 'de kleuren veranderen naar de hover' to 'change colors on hover' */
+  header .menu-navbar-container ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+  }
+  
+  header .menu-navbar-container ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Updated comments to indicate dropdown styles */
+  header .menu-navbar-container ul li ul {
+    position: absolute;
+    left: 0px;
+    background-color: red;
+    display: none;
+  }
+  
+  header .menu-navbar-container ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+  /* Updated comments to indicate dropdown display on hover and focus */
+  header .menu-navbar-container ul li:focus-within > ul,
+  header .menu-navbar-container ul li:hover > ul {
+    display: block; /* Changed 'inline' to 'block' to show the dropdown */
+  }
+  
+  /* Added comments to indicate hamburger menu styles */
+  #hamburger-bar {
+    display: none;
+  }
+  
+  header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media(max-width: 991px) {
+    header {
+      padding: 20px;
+    }
+  
+    header label {
+      display: initial;
+    }
+  
+    /* Updated comments to indicate menu container styles */
+    header .menu-navbar-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border-top: 1px solid rgba(0, 0, 0, 1);
+      display: none;
+    }
+  
+    header .menu-navbar-container ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Updated comments to indicate dropdown styles */
+    header .menu-navbar-container ul li ul {
+      position: relative;
+      width: 100%;
+      background-color: #eee; /* Changed dropdown background color */
+    }
+  
+    #hamburger-bar:checked ~ .menu-navbar-container {
+      display: flex;
+    }
+  }
+  
